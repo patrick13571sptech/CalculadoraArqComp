@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>.rotate {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    
+                    }
+    .rotate:hover {
+transform: rotate(500grad);
+transition: 1.5s ease;
+    }
+
+</style>
+
+<style>
+    .rotate1 {
+    position: absolute;
+    bottom: 1%;
+    top: 10%;
+    animation: rotacao 5s linear infinite;
+}
+
+@keyframes rotacao {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+</style>
+
+
+
+
+
+<body>
+
+    <div class="rotate1">
+
+        <img src="https://static.wikia.nocookie.net/spongebob/images/9/96/The_Two_Faces_of_Squidward_174.png/revision/latest?cb=20200923005328" class="rotate">
+</div>
+    
+    <title>rotate</title>
+        <link rel="stylesheet" href="rotate.css">
+      </head>
+      <body>
+        <section class="rotate">
+          <img src="https://cdn.shopify.com/s/files/1/0573/7569/files/nature_pants_138_1000x.jpg?v=1716954767" alt="Imagem de Patrick Star" style="width: 100px; height: 100px;">
+        </section>
+
+        
+<style>
+
+        body {
+            background-image: url('https://pm1.aminoapps.com/7386/a543a0e25b29b05c4b9780110657431b8d4bb2d6r1-428-320v2_hq.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+</style>    
+    <h1> Calculadora não é lixo. </h1>
+    <b> Binário (Lembre-se: 0 e 1)</b><br><input type="number" id="binario1"><br>  
+    <b> Octal (Lembre-se: de 0 a 7)</b><br><input type="number" id="octal1"><br>
+    <b> Decimal (Lembre-se: de 0 a 9)</b><br><input type="number" id="decimal1"><br> 
+    <b> Hexadecimal (Lembre-se: de 0 a 9 && A até F)</b><br><input type="text" id="hexadecimal1"><br><br><br><br>
+
+
+    <button onclick="bin()"> Conversão da luz (binário) para outras bases</button><br><br>
+    <button onclick="oct()"> Conversão em octal para demais bases (inclusive a luz) </button><br><br>
+    <button onclick="deci()"> Conversão em Decimal para as luzes </button><br><br>
+    <button onclick="hexa()"> Conversão em hexadecimal para demais bases (inclusive a light) </button>
+
+
+<div id="conversao"></div>
+
+<script>
+
+        function bin(){
+        var binario = Number(binario1.value)
+
+        var decimal = parseInt (binario, 2)
+        var hexadecimal = decimal.toString(16)
+        var octal = decimal.toString(8)
+        
+        if (binario > 0) {
+            conversao.innerHTML = `<br><br>
+            Decimal: ${decimal}<br>
+            Hexadecimal: ${hexadecimal}<br>
+            Octal: ${octal}<br>
+            `
+        }
+    }
+      
+        function oct(){
+
+        var octal = Number(octal1.value)
+
+        var decimal = parseInt(octal, 8)
+        var binario = octal.toString(2)
+        var hexadecimal = octal.toString(16)
+                
+
+        if (octal > 0){
+            conversao.innerHTML = `<br><br>
+            Binário: ${binario}<br>
+            Decimal: ${decimal}<br>
+            Hexadecimal: ${hexadecimal}<br>
+            `
+        } else {conversao.innerHTML = `Insira um valor válido!`}
+        }
+
+        function deci()
+        
+        {
+        
+        var decimal = Number(decimal1.value)
+
+        var binario = decimal.toString(2)
+        var octal = decimal.toString(8)
+        var hexadecimal = decimal.toString(16)
+      
+
+        if (decimal > 0) {       `<br><br>
+            conversao.innerHTML =
+            Binário: ${binario}<br>
+            Octal: ${octal}<br>
+            Hexadecimal: ${hexadecimal}<br>
+            `
+        } 
+
+        } 
+     
+     
+            function hexa()
+        {
+            var hexadecimal = hexadecimal1.value
+
+            var decimal = parseInt(hexadecimal, 16)
+            var binario = decimal.toString(2)
+            var octal = decimal.toString(8)
+            
+            conversao.innerHTML = `<br><br>
+            Binário: ${binario}<br>
+            Octal: ${octal}<br>
+            Decimal: ${decimal}<br>
+            
+            `
+        }
+           
+         
+</script>
+</body>
+</html>
+
+
